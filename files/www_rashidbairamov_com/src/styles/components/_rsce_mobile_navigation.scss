@@ -1,0 +1,51 @@
+.rsce_mobile_navigation {
+  padding-top: rem-calc( 20px );
+  padding-left: rem-calc( 20px );
+
+  &__logo {
+	width: rem-calc( 50px );
+	margin-bottom: rem-calc( 20px );
+  }
+
+  .mod_navigation {
+	margin-bottom: rem-calc( 50px );
+	ul {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+
+	  li {
+		position: relative;
+		margin-bottom: rem-calc( 20px );
+		padding-left: rem-calc( 25px );
+		font-size: rem-calc( 28px );
+		font-weight: 300;
+		&::before {
+		  position: absolute;
+		  content: '#';
+		  top: 0;
+		  left: 0;
+		  color: $germany;
+		}
+		&:last-child {
+		  margin-bottom: 0;
+		}
+
+		a {
+		  color: $luxembourg;
+		  text-decoration: none;
+		  transition-duration: .3s;
+		  &:hover {
+			color: $germany;
+			transition-duration: .3s;
+		  }
+		}
+	  }
+	}
+  }
+
+  &__links {
+	margin: 0;
+	padding: 0;
+  }
+}
