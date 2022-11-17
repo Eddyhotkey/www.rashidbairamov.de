@@ -1,0 +1,31 @@
+<div class="rsce_mobile_navigation <?= $this->class ?>" <?= $this->cssID ?>>
+    <div class="rsce_mobile_navigation__logo">
+        <?php if ($image = $this->arrData['getImageObject']($this -> logo, [null, null, 2] )): ?>
+            <div class="rsce_mobile_navigation__logo">
+                <?php $image->picture['alt'] = $this->logo_alt ?>
+                <?php $image->picture['title'] = $this->logo_title ?>
+                <?php $this->insert('image', (array) $image); ?>
+            </div>
+        <?php endif; ?>
+    </div>
+    {{insert_module::3}}
+    <ul class="rsce_mobile_navigation__links">
+        <?php foreach ( $this->list as $item ): ?>
+            <?php if ( $item->link ): ?>
+                <a href="<?= $item->link ?>"
+                   class="rsce_mobile_navigation__link"
+                   title="<?= $item->link_title ?>"
+                   aria-label=" <?= $item->link_title ?>"
+                >
+                    <?php if ($image = $this->arrData['getImageObject']($item -> slm_image, [null, null, 1] )): ?>
+                        <div class="rsce_mobile_navigation__icon">
+                            <?php $image->picture['alt'] = $item->slm_image_alt ?>
+                            <?php $image->picture['title'] = $item->slm_image_title ?>
+                            <?php $this->insert('image', (array) $image); ?>
+                        </div>
+                    <?php endif; ?>
+                </a>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </ul>
+</div>
