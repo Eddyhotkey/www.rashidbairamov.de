@@ -1,0 +1,20 @@
+.mod_mobile_menu {
+  padding-top: rem-calc( 20px );
+  padding-bottom: rem-calc( 10px );
+  @include media-breakpoint-up( lg ) {
+	display: none;
+  }
+}
+
+.mobile_menu_trigger {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.mobile_menu {
+  .inner {
+    background-color: $azerbaijan;
+  }
+}
