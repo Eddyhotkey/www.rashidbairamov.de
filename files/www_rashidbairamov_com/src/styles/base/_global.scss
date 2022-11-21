@@ -1,6 +1,12 @@
 body {
+  max-width: rem-calc( 1920px );
+  margin: 0 auto;
   font-family: 'Fira Code', monospace;
   font-size: rem-calc( 16px );
   color: $france;
   background-color: $azerbaijan;
+
+  figure {
+    margin: 0;
+  }
 }
