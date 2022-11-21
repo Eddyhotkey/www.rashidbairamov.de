@@ -1,6 +1,6 @@
 .mod_mobile_menu {
   padding-top: rem-calc( 20px );
-  padding-bottom: rem-calc( 10px );
+  padding-bottom: rem-calc( 20px );
   @include media-breakpoint-up( lg ) {
 	display: none;
   }
