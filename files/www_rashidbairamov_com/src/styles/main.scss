@@ -2,18 +2,13 @@
 *** Created by S-Punkt-Online www.s-punkt-online.de ***
 ******************************************************/
 
-$grid-columns: 24;
+
 $font-size: 16px;
+$grid-columns: 24;
 
 /*** vendors ***/
-@import "vendors/bootstrap/scss/bootstrap.css";
+@import "vendors/bootstrap/scss/bootstrap.scss";
 @import "vendors/mburger/mburger.css";
-
-/*** base ***/
-@import "base/font-face";
-@import "base/typography";
-@import "base/colors";
-@import "base/global";
 
 /*** utils ***/
 @import "utils/functions";
@@ -21,8 +16,20 @@ $font-size: 16px;
 @import "utils/mixins";
 @import "utils/variables";
 
+/*** base ***/
+@import "base/font-face";
+@import "base/typography";
+@import "base/colors";
+@import "base/global";
+
 /*** themes ***/
 /*** layouts ***/
+@import "layout/header",
+		"layout/footer";
+
 /*** pages ***/
 /*** components ***/
-@import "components/navigation_button";
+@import "components/navigation_button",
+		"components/mod_mobile_menu",
+		"components/rsce_mobile_navigation",
+		"components/rsce_desktop_navigation";
