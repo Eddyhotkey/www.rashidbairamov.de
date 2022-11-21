@@ -1,0 +1,75 @@
+.rsce_desktop_navigation {
+  position: relative;
+  display: none;
+  @include media-breakpoint-up( lg ) {
+	display: block;
+	&::before {
+	  position: absolute;
+	  content: "";
+	  top: rem-calc( -30px );
+	  left: rem-calc( 35px );
+	  height: rem-calc( 236px );
+	  width: rem-calc( 2px );
+	  background-color: $luxembourg;
+	}
+	&__container {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	}
+
+	&__links {
+	  position: absolute;
+	  top: rem-calc( 200px );
+	  margin: 0;
+	  padding: 0 0 0 rem-calc( 20px );
+	  list-style: none;
+
+	  z-index: 10;
+	}
+
+	.mod_navigation {
+	  ul {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+		  margin-right: rem-calc( 20px );
+		  padding-left: rem-calc( 15px );
+		  font-weight: 300;
+		  text-transform: uppercase;
+		  position: relative;
+
+		  &:last-child {
+			margin-right: 0;
+		  }
+
+		  &::before {
+			position: absolute;
+			content: '#';
+			top: rem-calc( -4px );
+			left: 0;
+			color: $germany;
+			font-size: rem-calc( 20px );
+			font-weight: 400;
+		  }
+
+		  a {
+			color: $luxembourg;
+			text-decoration: none;
+			transition-duration: .3s;
+			&:hover {
+			  color: $germany;
+			  transition-duration: .3s;
+			}
+		  }
+		}
+	  }
+	}
+
+  }
+}
