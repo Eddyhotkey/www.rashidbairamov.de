@@ -1,0 +1,29 @@
+<div class="rsce_desktop_navigation <?= $this->class ?>" <?= $this->cssID ?>>
+    <ul class="rsce_desktop_navigation__links">
+        <?php foreach ( $this->list as $item ): ?>
+            <?php if ( $item->link ): ?>
+                <li>
+                    <a href="<?= $item->link ?>"
+                       class="rsce_desktop_navigation__link"
+                       title="<?= $item->link_title ?>"
+                       aria-label=" <?= $item->link_title ?>"
+                    >
+                        <?php if ($image = $this->arrData['getImageObject']($item -> slm_image, [null, null, 1] )): ?>
+                            <div class="rsce_desktop_navigation__icon">
+                                <?php $image->picture['alt'] = $item->slm_image_alt ?>
+                                <?php $image->picture['title'] = $item->slm_image_title ?>
+                                <?php $this->insert('image', (array) $image); ?>
+                            </div>
+                        <?php endif; ?>
+                    </a>
+                </li>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </ul>
+    <div class="container rsce_desktop_navigation__container">
+        <div class="rsce_desktop_navigation__logo">
+            {{insert_node::1}}
+        </div>
+        {{insert_module::3}}
+    </div>
+</div>
