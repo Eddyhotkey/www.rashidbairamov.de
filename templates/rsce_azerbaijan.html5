@@ -1,0 +1,78 @@
+<section class="rsce_azerbaijan <?= $this->class ?>" <?= $this->cssID ?> >
+    <div class="container">
+        <div class="row">
+            <div class="col-24 col-lg-14">
+                <div class="rsce_azerbaijan__text_container">
+                    <?php if( $this->headline ): ?>
+                        <<?php echo $this->hl ?> itemprop="title" class="rsce_azerbaijan__title">
+                            <?php echo $this->headline ?>
+                            <?php if ( $this->title_deco ): ?>
+                                <span class="rsce_azerbaijan__title_deco">
+                                    <?= $this->title_deco ?>
+                                </span>
+                            <?php endif; ?>
+                            <?php if ( $this->title_deco_1 ): ?>
+                                <span class="rsce_azerbaijan__title_deco">
+                                            <?= $this->title_deco_1 ?>
+                                        </span>
+                            <?php endif; ?>
+                            <?php if ( $this->title_deco_2 ): ?>
+                                <span class="rsce_azerbaijan__title_deco">
+                                            <?= $this->title_deco_2 ?>
+                                        </span>
+                            <?php endif; ?>
+                        </<?php echo $this->hl ?>>
+                    <?php endif; ?>
+                    <?php if ( $this->text ): ?>
+                        <div class="rsce_azerbaijan__text">
+                            <?= $this->text ?>
+                        </div>
+                    <?php endif; ?>
+                    <?php if ( $this->link ): ?>
+                        <a href=" <?= $this->link ?>"
+                           class="rsce_azerbaijan__button"
+                           title=" <?= $this->linkt_title ?>"
+                           aria-label=" <?= $this->link_title ?>"
+                        >
+                            <?= $this->link_text ?>
+                        </a>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <div class="col-24 col-lg-10">
+                <div class="rsce_azerbaijan__images_container">
+                    <?php if ($deco_icon= $this->arrData['getImageObject']($this -> image_deco )): ?>
+                        <img
+                                class="rsce_azerbaijan__deco_image"
+                                src="<?php echo $deco_icon->src ?>"
+                                alt="<?php echo $deco_icon->alt ?: $this->image_deco_alt ?>"
+                                title="<?= $this->image_deco_title ?>"
+                            <?php echo $deco_icon->imgSize ?>
+                        >
+                    <?php endif; ?>
+                    <div class="rsce_azerbaijan__preview">
+                        <?php if ($image = $this->arrData['getImageObject']($this -> image, [null, null, 3] )): ?>
+                            <?php $image->picture['alt'] = $this->image_alt ?>
+                            <?php $image->picture['title'] = $this->image_title ?>
+                            <?php $this->insert('image', (array) $image); ?>
+                        <?php endif; ?>
+                        <?php if ( $this->image_description ): ?>
+                            <div class="rsce_azerbaijan__image_text">
+                                <?= $this->image_description ?>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                    <?php if ($deco_icon_1= $this->arrData['getImageObject']($this -> image_deco_1 )): ?>
+                        <img
+                                class="rsce_azerbaijan__deco_image"
+                                src="<?php echo $deco_icon_1->src ?>"
+                                alt="<?php echo $deco_icon_1->alt ?: $this->image_deco_alt_1 ?>"
+                                title="<?= $this->image_deco_title_1 ?>"
+                            <?php echo $deco_icon->imgSize ?>
+                        >
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
