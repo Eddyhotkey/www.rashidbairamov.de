@@ -1,0 +1,18 @@
+
+/*
+	MAIN_BUTTON;
+ */
+
+@mixin main_button {
+  display: inline-block;
+  padding: rem-calc( 8px ) rem-calc( 16px );
+  color: $france;
+  text-decoration: none;
+  transition-duration: .3s;
+  border: rem-calc( 1px ) solid $germany;
+
+  &:hover {
+	color: $france;
+	background-color: $germany_opacity;
+  }
+}
