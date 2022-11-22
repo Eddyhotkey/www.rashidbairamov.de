@@ -11766,6 +11766,9 @@ textarea.form-control-lg {
   }
 }
 /*** utils ***/
+/*
+	MAIN_BUTTON;
+ */
 /*** base ***/
 /* fira-code-300 - latin */
 @font-face {
@@ -12082,6 +12085,103 @@ body figure {
     color: #C778DD;
     transition-duration: 0.3s;
   }
+}
+
+.rsce_azerbaijan {
+  padding-top: 1.875rem;
+}
+@media (min-width: 992px) {
+  .rsce_azerbaijan {
+    padding-top: 3.75rem;
+  }
+}
+.rsce_azerbaijan__title {
+  margin-bottom: 1.5625rem;
+}
+.rsce_azerbaijan__title span:first-child,
+.rsce_azerbaijan__title span:last-child {
+  color: #C778DD;
+}
+@media (min-width: 992px) {
+  .rsce_azerbaijan__title {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .rsce_azerbaijan__text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+}
+.rsce_azerbaijan__text {
+  color: #ABB2BF;
+}
+.rsce_azerbaijan__button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border: 0.0625rem solid #C778DD;
+  display: none;
+}
+.rsce_azerbaijan__button:hover {
+  color: #fff;
+  background-color: rgba(199, 120, 221, 0.2);
+}
+@media (min-width: 992px) {
+  .rsce_azerbaijan__button {
+    display: inline-block;
+    width: fit-content;
+  }
+}
+.rsce_azerbaijan__images_container {
+  position: relative;
+}
+.rsce_azerbaijan__preview {
+  width: fit-content;
+}
+.rsce_azerbaijan__image_text {
+  position: relative;
+  padding: 0.625rem 0 0.625rem 2.125rem;
+  border: 0.0625rem solid #ABB2BF;
+}
+.rsce_azerbaijan__image_text::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  margin-top: -0.5rem;
+  background-color: #C778DD;
+}
+.rsce_azerbaijan__image_text p {
+  margin: 0;
+  color: #ABB2BF;
+}
+.rsce_azerbaijan__image_text a {
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+.rsce_azerbaijan__image_text a:hover {
+  color: #C778DD;
+}
+.rsce_azerbaijan__deco_image {
+  position: absolute;
+}
+.rsce_azerbaijan__deco_image:first-child {
+  top: 5rem;
+  left: 0;
+  z-index: -1;
+}
+.rsce_azerbaijan__deco_image:last-child {
+  bottom: 3.5rem;
+  right: 3.5rem;
+  width: 5.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */
