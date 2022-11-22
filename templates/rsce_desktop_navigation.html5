@@ -9,11 +9,9 @@
                        aria-label=" <?= $item->link_title ?>"
                     >
                         <?php if ($image = $this->arrData['getImageObject']($item -> slm_image, [null, null, 1] )): ?>
-                            <div class="rsce_desktop_navigation__icon">
-                                <?php $image->picture['alt'] = $item->slm_image_alt ?>
-                                <?php $image->picture['title'] = $item->slm_image_title ?>
-                                <?php $this->insert('image', (array) $image); ?>
-                            </div>
+                            <?php $image->picture['alt'] = $item->slm_image_alt ?>
+                            <?php $image->picture['title'] = $item->slm_image_title ?>
+                            <?php $this->insert('image', (array) $image); ?>
                         <?php endif; ?>
                     </a>
                 </li>
