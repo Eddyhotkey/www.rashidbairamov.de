@@ -1,0 +1,90 @@
+.rsce_azerbaijan {
+  padding-top: rem-calc( 30px );
+  @include media-breakpoint-up( lg ) {
+	padding-top: rem-calc( 60px );
+  }
+  &__title {
+	margin-bottom: rem-calc( 25px );
+	span:first-child,
+	span:last-child {
+	  color: $germany;
+	}
+	@include media-breakpoint-up( lg ) {
+	  margin-bottom: rem-calc( 32px );
+	}
+  }
+
+  &__text_container {
+	@include media-breakpoint-up( lg ) {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  height: 100%;
+	}
+  }
+
+  &__text {
+	color: $luxembourg;
+  }
+
+  &__button {
+	@include main_button;
+	display: none;
+	@include media-breakpoint-up( lg ) {
+	  display: inline-block;
+	  width: fit-content;
+	}
+  }
+
+  &__images_container {
+	position: relative;
+  }
+
+  &__preview {
+	width: fit-content;
+  }
+
+  &__image_text {
+	position: relative;
+	padding: rem-calc( 10px ) 0 rem-calc( 10px ) rem-calc( 34px );
+	border: rem-calc( 1px ) solid $luxembourg;
+
+	&::before {
+	  position: absolute;
+	  content: "";
+	  top: 50%;
+	  left: rem-calc( 8px );
+	  width: rem-calc( 16px );
+	  height: rem-calc( 16px );
+	  margin-top: rem-calc( -8px );
+	  background-color: $germany;
+	}
+	p {
+	  margin: 0;
+	  color: $luxembourg;
+	}
+
+	a {
+	  color: $france;
+	  text-decoration: none;
+	  transition-duration: .3s;
+	  &:hover {
+		color: $germany;
+	  }
+	}
+  }
+
+  &__deco_image {
+	position: absolute;
+	&:first-child {
+	  top: rem-calc( 80px );
+	  left: 0;
+	  z-index: -1;
+	}
+	&:last-child {
+	  bottom: rem-calc( 56px );
+	  right: rem-calc( 56px );
+	  width: rem-calc( 84px );
+	}
+  }
+}
