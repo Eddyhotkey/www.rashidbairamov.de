@@ -1,0 +1,16 @@
+<section class="rsce_germany <?= $this->class ?>" <?= $this->cssID ?> >
+    <div class="container">
+        <div class="rsce_germany__container">
+            <?php if ( $this->quote ): ?>
+                <p class="rsce_germany__quote">
+                    <?= $this->quote ?>
+                </p>
+            <?php endif; ?>
+            <?php if ( $this->autor ): ?>
+                <p class="rsce_germany__autor">
+                    <?= $this->autor ?>
+                </p>
+            <?php endif; ?>
+        </div>
+    </div>
+</section>
