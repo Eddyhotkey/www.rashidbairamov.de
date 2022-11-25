@@ -1,0 +1,66 @@
+.rsce_germany {
+  position: relative;
+  padding-bottom: rem-calc( 50px );
+  padding-top: rem-calc( 50px );
+
+  @include media-breakpoint-up( md ) {
+	&::before {
+	  position: absolute;
+	  content: url("../images/svg/decoration_svg/rechtangel_1.svg");
+	  top: 50%;
+	  right: 0;
+	  margin-top: rem-calc( -49px );
+	}
+  }
+
+  @include media-breakpoint-up( lg ) {
+	padding-bottom: rem-calc( 100px );
+	padding-top: rem-calc( 100px );
+  }
+
+  &__container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: fit-content;
+	margin: 0 auto;
+  }
+
+  &__quote {
+	position: relative;
+	margin: 0;
+	padding: rem-calc( 16px );
+	font-size: rem-calc( 24px );
+	border: rem-calc( 1px ) solid $luxembourg;
+	@include media-breakpoint-up( lg ) {
+	  padding: rem-calc( 32px );
+	}
+
+	&::before {
+	  position: absolute;
+	  content: url("../images/svg/decoration_svg/quotes.svg");
+	  top: 0;
+	  left: rem-calc( 20px );
+	  margin-top: rem-calc( -14px );
+	}
+	&::after {
+	  position: absolute;
+	  content: url("../images/svg/decoration_svg/quotes.svg");
+	  bottom: 0;
+	  right: rem-calc( 20px );
+	  margin-bottom: rem-calc( -28px );
+	}
+  }
+
+  &__autor {
+	margin: 0;
+	padding: rem-calc( 8px );
+	text-align: right;
+	border: rem-calc( 1px ) solid $luxembourg;
+	border-top: none;
+
+	@include media-breakpoint-up( lg ) {
+	  padding: rem-calc( 16px );
+	}
+  }
+}
