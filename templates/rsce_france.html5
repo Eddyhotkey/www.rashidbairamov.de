@@ -1,0 +1,22 @@
+<section class="rsce_france <?= $this->class ?>" <?= $this->cssID ?>>
+    <div class="container rsce_france__container">
+        <?php if( $this->headline ): ?>
+            <div class="rsce_france__title_container">
+                <<?php echo $this->hl ?> id="rsce_france_title" itemprop="title" class="rsce_france__title">
+                    <?php echo $this->headline ?>
+                </<?php echo $this->hl ?>>
+            </div>
+        <?php endif; ?>
+        <?php if ( $this->link ): ?>
+            <div class="rsce_france__link_container">
+                <a href="<?= $this->link ?>"
+                   class="rsce_france__link"
+                   title="<?= $this->link_title ?>"
+                   aria-label="<?= $this->link_title ?>"
+                >
+                    <?= $this->link_text ?>
+                </a>
+            </div>
+        <?php endif; ?>
+    </div>
+</section>
