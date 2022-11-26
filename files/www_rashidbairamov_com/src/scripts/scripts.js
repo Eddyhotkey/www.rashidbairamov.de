@@ -42,3 +42,22 @@ $( document ).ready( function ( $ ) {
     $(window).scroll(sticky);
     sticky();
 });
+/*
+    03_first_letter_color;
+    The coloured first letter in the line;
+ */
+
+$( document ).ready( function ( $ ) {
+    let el = document.getElementById('rsce_france_title');
+// define the string;
+
+    function spanize(el) {
+        //define the function;
+
+        el.innerHTML =  el.innerHTML.replace(/(#)/g, '<span>#</span>');
+        // change the content of the string by replacing the first letter with a span tag with the content;
+    }
+    spanize(el);
+});
+
+
