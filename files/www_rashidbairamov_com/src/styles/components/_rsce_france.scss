@@ -1,0 +1,43 @@
+.rsce_france {
+  margin-bottom: rem-calc(30px);
+  @include media-breakpoint-up( lg ) {
+	margin-bottom: rem-calc( 50px );
+  }
+  &__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+
+  &__title {
+	span {
+	  padding-right: rem-calc( 3px );
+	  color: $germany;
+	}
+  }
+
+  &__title_container {
+	position: relative;
+	@include media-breakpoint-up( md ) {
+	  &::after {
+		position: absolute;
+		content: "";
+		top: 50%;
+		left: calc( 100% + 20px );
+		margin-top: rem-calc( -1px );
+		width: 150%;
+		height: rem-calc( 2px );
+		background-color: $germany;
+	  }
+	}
+  }
+
+  &__link {
+	color: $france;
+	text-decoration: none;
+	transition-duration: .3s;
+	&:hover {
+	  color: $germany;
+	}
+  }
+}
