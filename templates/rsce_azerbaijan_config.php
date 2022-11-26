@@ -10,7 +10,7 @@ return array(
         'Header: 2 Spalte, eine Überschrift, eine Beschreibung, Links, ein Bild',
     ),
     'types' => array('content'),
-    'contentCategory' => 'RSCE: Inhalt',
+    'contentCategory' => 'RSCE: Header',
     'beTemplate' => 'be_wildcard',
     'standardFields' => array('headline', 'cssID'),
     'wrapper' => array(
