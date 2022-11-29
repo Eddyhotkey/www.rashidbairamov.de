@@ -1,0 +1,51 @@
+.rsce_luxembourg {
+  position: relative;
+  @include media-breakpoint-up( lg ) {
+	&::before {
+	  position: absolute;
+	  content: url("../images/svg/decoration_svg/Dots_1.svg");
+	  top: rem-calc( -40px );
+	  left: rem-calc( 10px );
+	}
+
+	&::after {
+	  position: absolute;
+	  content: url("../images/svg/decoration_svg/rechtangel_2.svg");
+	  top: 20%;
+	  right: 0;
+	}
+  }
+  &__item {
+	margin-bottom: rem-calc( 20px );
+	border: rem-calc( 1px ) solid $luxembourg;
+  }
+
+  &__image {
+	width: 100%;
+  }
+
+
+  &__tools {
+	margin: 0;
+	padding: rem-calc( 8px );
+	color: $luxembourg;
+	border-top: rem-calc( 1px ) solid $luxembourg;
+	border-bottom: rem-calc( 1px ) solid $luxembourg;
+  }
+
+  &__text {
+	padding: rem-calc( 16px );
+	h1,h2,h3,h4,h5,h6 {
+	  @include media-breakpoint-up( lg ) {
+		font-size: rem-calc( 24px );
+	  }
+	}
+	p:last-child {
+	  margin: 0;
+	}
+
+	a {
+	  @include main_button;
+	}
+  }
+}
