@@ -16,3 +16,14 @@
 	background-color: $germany_opacity;
   }
 }
+
+/*
+	MAIN_PADDINGS;
+ */
+
+@mixin main_padding_bottom {
+  padding-bottom: rem-calc( 50px );
+  @include media-breakpoint-up( lg ) {
+	padding-bottom: rem-calc( 100px );
+  }
+}

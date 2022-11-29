@@ -1,5 +1,6 @@
 .rsce_luxembourg {
   position: relative;
+  @include main_padding_bottom;
   @include media-breakpoint-up( lg ) {
 	&::before {
 	  position: absolute;

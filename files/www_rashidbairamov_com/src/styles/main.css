@@ -11769,6 +11769,9 @@ textarea.form-control-lg {
 /*
 	MAIN_BUTTON;
  */
+/*
+	MAIN_PADDINGS;
+ */
 /*** base ***/
 /* fira-code-300 - latin */
 @font-face {
@@ -12182,6 +12185,174 @@ body figure {
   bottom: 3.5rem;
   right: 3.5rem;
   width: 5.25rem;
+}
+
+.rsce_germany {
+  position: relative;
+  padding-bottom: 3.125rem;
+  padding-top: 3.125rem;
+}
+@media (min-width: 768px) {
+  .rsce_germany::before {
+    position: absolute;
+    content: url("../images/svg/decoration_svg/rechtangel_1.svg");
+    top: 50%;
+    right: 0;
+    margin-top: -3.0625rem;
+  }
+}
+@media (min-width: 992px) {
+  .rsce_germany {
+    padding-bottom: 6.25rem;
+    padding-top: 6.25rem;
+  }
+}
+.rsce_germany__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
+  margin: 0 auto;
+}
+.rsce_germany__quote {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 0.0625rem solid #ABB2BF;
+}
+@media (min-width: 992px) {
+  .rsce_germany__quote {
+    padding: 2rem;
+  }
+}
+.rsce_germany__quote::before {
+  position: absolute;
+  content: url("../images/svg/decoration_svg/quotes.svg");
+  top: 0;
+  left: 1.25rem;
+  margin-top: -0.875rem;
+}
+.rsce_germany__quote::after {
+  position: absolute;
+  content: url("../images/svg/decoration_svg/quotes.svg");
+  bottom: 0;
+  right: 1.25rem;
+  margin-bottom: -1.75rem;
+}
+.rsce_germany__autor {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: right;
+  border: 0.0625rem solid #ABB2BF;
+  border-top: none;
+}
+@media (min-width: 992px) {
+  .rsce_germany__autor {
+    padding: 1rem;
+  }
+}
+
+.rsce_france {
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 992px) {
+  .rsce_france {
+    margin-bottom: 3.125rem;
+  }
+}
+.rsce_france__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rsce_france__title span {
+  padding-right: 0.1875rem;
+  color: #C778DD;
+}
+.rsce_france__title_container {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .rsce_france__title_container::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: calc( 100% + 20px );
+    margin-top: -0.0625rem;
+    width: 150%;
+    height: 0.125rem;
+    background-color: #C778DD;
+  }
+}
+.rsce_france__link {
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+.rsce_france__link:hover {
+  color: #C778DD;
+}
+
+.rsce_luxembourg {
+  position: relative;
+  padding-bottom: 3.125rem;
+}
+@media (min-width: 992px) {
+  .rsce_luxembourg {
+    padding-bottom: 6.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .rsce_luxembourg::before {
+    position: absolute;
+    content: url("../images/svg/decoration_svg/Dots_1.svg");
+    top: -2.5rem;
+    left: 0.625rem;
+  }
+  .rsce_luxembourg::after {
+    position: absolute;
+    content: url("../images/svg/decoration_svg/rechtangel_2.svg");
+    top: 20%;
+    right: 0;
+  }
+}
+.rsce_luxembourg__item {
+  margin-bottom: 1.25rem;
+  border: 0.0625rem solid #ABB2BF;
+}
+.rsce_luxembourg__image {
+  width: 100%;
+}
+.rsce_luxembourg__tools {
+  margin: 0;
+  padding: 0.5rem;
+  color: #ABB2BF;
+  border-top: 0.0625rem solid #ABB2BF;
+  border-bottom: 0.0625rem solid #ABB2BF;
+}
+.rsce_luxembourg__text {
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  .rsce_luxembourg__text h1, .rsce_luxembourg__text .h1, .rsce_luxembourg__text h2, .rsce_luxembourg__text .h2, .rsce_luxembourg__text h3, .rsce_luxembourg__text .h3, .rsce_luxembourg__text h4, .rsce_luxembourg__text .h4, .rsce_luxembourg__text h5, .rsce_luxembourg__text .h5, .rsce_luxembourg__text h6, .rsce_luxembourg__text .h6 {
+    font-size: 1.5rem;
+  }
+}
+.rsce_luxembourg__text p:last-child {
+  margin: 0;
+}
+.rsce_luxembourg__text a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border: 0.0625rem solid #C778DD;
+}
+.rsce_luxembourg__text a:hover {
+  color: #fff;
+  background-color: rgba(199, 120, 221, 0.2);
 }
 
 /*# sourceMappingURL=main.css.map */
