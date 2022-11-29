@@ -61,3 +61,11 @@ $( document ).ready( function ( $ ) {
 });
 
 
+/*
+    04_rsce_luxembourg;
+    Deleting list items;
+ */
+$( document ).ready( function ( $ ) {
+   let a = $( '.homepage__main .rsce_luxembourg__col' );
+   a.slice(3).remove();
+});
