@@ -1,0 +1,60 @@
+.mod_newsreader {
+  h1 {
+	margin-bottom: rem-calc( 10px );
+	padding-top: rem-calc( 100px );
+	padding-bottom: rem-calc( 100px );
+	@include media-breakpoint-up( lg ) {
+	  margin-bottom: rem-calc( 20px );
+	  padding: rem-calc( 100px ) rem-calc( 50px );
+	  background-color: rgb(102, 86, 15);
+	}
+  }
+
+
+
+  p.info {
+	margin-bottom: rem-calc( 50px );
+	color: $luxembourg;
+	@include media-breakpoint-up( lg ) {
+	  margin-bottom: rem-calc( 100px );
+	}
+  }
+
+  .ce_text {
+	h1,h2,h3,h4,h5,h6 {
+	  font-weight: 300;
+	}
+	margin-bottom: rem-calc( 10px );
+	@include media-breakpoint-up( lg ) {
+	  margin-bottom: rem-calc( 30px );
+	}
+	p {
+	  color: $luxembourg;
+	}
+
+	strong {
+	  color: $germany;
+	}
+
+	a {
+	  color: $france;
+	  transition-duration: .3s;
+	  &:hover {
+		color: $germany;
+	  }
+	}
+  }
+
+  p.back {
+	a {
+	  @include main_button;
+	  position: relative;
+
+	  &::before {
+		content: "<~";
+		top: 50%;
+		padding-right: rem-calc( 5px );
+	  }
+	}
+  }
+}
