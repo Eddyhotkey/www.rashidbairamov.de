@@ -12266,6 +12266,9 @@ body figure {
   align-items: center;
   justify-content: space-between;
 }
+.rsce_france__title {
+  font-weight: 300;
+}
 .rsce_france__title span {
   padding-right: 0.1875rem;
   color: #C778DD;
@@ -12337,6 +12340,7 @@ body figure {
 @media (min-width: 992px) {
   .rsce_luxembourg__text h1, .rsce_luxembourg__text .h1, .rsce_luxembourg__text h2, .rsce_luxembourg__text .h2, .rsce_luxembourg__text h3, .rsce_luxembourg__text .h3, .rsce_luxembourg__text h4, .rsce_luxembourg__text .h4, .rsce_luxembourg__text h5, .rsce_luxembourg__text .h5, .rsce_luxembourg__text h6, .rsce_luxembourg__text .h6 {
     font-size: 1.5rem;
+    font-weight: 300;
   }
 }
 .rsce_luxembourg__text p:last-child {
@@ -12353,6 +12357,142 @@ body figure {
 .rsce_luxembourg__text a:hover {
   color: #fff;
   background-color: rgba(199, 120, 221, 0.2);
+}
+
+.layout_short {
+  margin-bottom: 1.25rem;
+}
+.layout_short__container {
+  border: 0.0625rem solid #ABB2BF;
+}
+.layout_short .info {
+  margin: 0;
+  padding: 0.5rem;
+  color: #ABB2BF;
+  border-bottom: 0.0625rem solid #ABB2BF;
+}
+.layout_short h2, .layout_short .h2 {
+  padding: 1rem 1rem 0;
+  font-weight: 300;
+}
+.layout_short h2 a, .layout_short .h2 a {
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+.layout_short h2 a:hover, .layout_short .h2 a:hover {
+  color: #C778DD;
+}
+@media (min-width: 992px) {
+  .layout_short h2, .layout_short .h2 {
+    font-size: 1.5rem;
+  }
+}
+.layout_short .ce_text {
+  padding: 1rem;
+  color: #ABB2BF;
+}
+.layout_short .more {
+  padding: 0 1rem;
+}
+.layout_short .more a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border: 0.0625rem solid #C778DD;
+}
+.layout_short .more a:hover {
+  color: #fff;
+  background-color: rgba(199, 120, 221, 0.2);
+}
+
+.ce_code {
+  margin-bottom: 0.625rem;
+}
+@media (min-width: 992px) {
+  .ce_code {
+    margin-bottom: 1.875rem;
+  }
+}
+.ce_code h1, .ce_code .h1, .ce_code h2, .ce_code .h2, .ce_code h3, .ce_code .h3, .ce_code h4, .ce_code .h4, .ce_code h5, .ce_code .h5, .ce_code h6, .ce_code .h6 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.ce_code span {
+  position: relative;
+  counter-increment: line-count;
+}
+.ce_code span::before {
+  display: inline-block;
+  padding-right: 1.25rem;
+  content: counter(line-count);
+  color: #ABB2BF;
+}
+
+.mod_newsreader h1, .mod_newsreader .h1 {
+  margin-bottom: 0.625rem;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+@media (min-width: 992px) {
+  .mod_newsreader h1, .mod_newsreader .h1 {
+    margin-bottom: 1.25rem;
+    padding: 6.25rem 3.125rem;
+    background-color: #66560f;
+  }
+}
+.mod_newsreader p.info {
+  margin-bottom: 3.125rem;
+  color: #ABB2BF;
+}
+@media (min-width: 992px) {
+  .mod_newsreader p.info {
+    margin-bottom: 6.25rem;
+  }
+}
+.mod_newsreader .ce_text {
+  margin-bottom: 0.625rem;
+}
+.mod_newsreader .ce_text h1, .mod_newsreader .ce_text .h1, .mod_newsreader .ce_text h2, .mod_newsreader .ce_text .h2, .mod_newsreader .ce_text h3, .mod_newsreader .ce_text .h3, .mod_newsreader .ce_text h4, .mod_newsreader .ce_text .h4, .mod_newsreader .ce_text h5, .mod_newsreader .ce_text .h5, .mod_newsreader .ce_text h6, .mod_newsreader .ce_text .h6 {
+  font-weight: 300;
+}
+@media (min-width: 992px) {
+  .mod_newsreader .ce_text {
+    margin-bottom: 1.875rem;
+  }
+}
+.mod_newsreader .ce_text p {
+  color: #ABB2BF;
+}
+.mod_newsreader .ce_text strong {
+  color: #C778DD;
+}
+.mod_newsreader .ce_text a {
+  color: #fff;
+  transition-duration: 0.3s;
+}
+.mod_newsreader .ce_text a:hover {
+  color: #C778DD;
+}
+.mod_newsreader p.back a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border: 0.0625rem solid #C778DD;
+  position: relative;
+}
+.mod_newsreader p.back a:hover {
+  color: #fff;
+  background-color: rgba(199, 120, 221, 0.2);
+}
+.mod_newsreader p.back a::before {
+  content: "<~";
+  top: 50%;
+  padding-right: 0.3125rem;
 }
 
 /*# sourceMappingURL=main.css.map */
