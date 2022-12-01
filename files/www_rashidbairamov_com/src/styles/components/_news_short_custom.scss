@@ -1,0 +1,44 @@
+.layout_short {
+  margin-bottom: rem-calc( 20px );
+
+  &__container {
+	border: rem-calc( 1px ) solid $luxembourg;
+  }
+
+  .info {
+	margin: 0;
+	padding: rem-calc( 8px );
+	color: $luxembourg;
+	border-bottom: rem-calc( 1px ) solid $luxembourg;
+  }
+
+  h2 {
+	padding: rem-calc( 16px ) rem-calc( 16px ) 0;
+	font-weight: 300;
+	a {
+	  color: $france;
+	  text-decoration: none;
+	  transition-duration: .3s;
+	  &:hover {
+		color: $germany;
+	  }
+	}
+
+	@include media-breakpoint-up( lg ) {
+	  font-size: rem-calc( 24px );
+	}
+  }
+
+  .ce_text {
+	padding: rem-calc( 16px );
+	color: $luxembourg;
+  }
+
+  .more {
+	padding: 0 rem-calc( 16px );
+
+	a {
+	  @include main_button;
+	}
+  }
+}
