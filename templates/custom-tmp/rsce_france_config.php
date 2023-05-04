@@ -30,7 +30,7 @@ return array(
                 'de' => array('Link', 'Hier können Sie einen Link auswählen oder hinzufügen'),
             ),
             'inputType' => 'url',
-            'eval' => array('tl_class' => 'w50 clr'),
+            'eval' => array('tl_class' => 'w33'),
         ),
 
         ### LINK TITLE ###
@@ -39,7 +39,7 @@ return array(
                 'de' => array('Link-Title', 'Hier können Sie einen Titel für den Link eingeben'),
             ),
             'inputType' => 'text',
-            'eval' => array('tl_class' => 'w50 clr'),
+            'eval' => array('tl_class' => 'w33'),
         ),
 
         ### LINK TEXT ###
@@ -48,7 +48,7 @@ return array(
                 'de' => array('Link-Text', 'Hier können Sie einen Text für den Link eingeben'),
             ),
             'inputType' => 'text',
-            'eval' => array('tl_class' => 'w50 clr'),
+            'eval' => array('tl_class' => 'w33'),
         ),
     ),
 );

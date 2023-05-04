@@ -3,10 +3,10 @@
 .idea
 
 # App config
-/app/config/parameters.yml
+/AutoWrapperClose_v2/app/config/parameters.yml
 
 # Generated folders
-/app/*
+/AutoWrapperClose_v2/app/*
 /assets/
 /files/www_rashidbairamov_com/src/images
 

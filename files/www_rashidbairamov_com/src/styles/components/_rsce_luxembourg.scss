@@ -21,6 +21,10 @@
 	border: rem-calc( 1px ) solid $luxembourg;
   }
 
+	&__image_container {
+
+	}
+
   &__image {
 	width: 100%;
   }
@@ -46,8 +50,14 @@
 	  margin: 0;
 	}
 
-	a {
-	  @include main_button;
-	}
+		p:last-child a {
+			@include main_button;
+		}
   }
+
+	.albert_brauer {
+		.rsce_luxembourg__image_container {
+			background-color: #EBEBEB;
+		}
+	}
 }

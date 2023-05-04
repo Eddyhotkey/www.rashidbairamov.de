@@ -1,0 +1,68 @@
+<section class="rsce_footer <?= $this->class ?>" <?= $this->cssID ?>>
+  <div class="container">
+    <div class="row">
+      <div class="col-24 col-lg-16">
+        <?php if ( $this->link ): ?>
+          <a href="<?= $this->link ?>"
+             class="rsce_footer__link"
+             title="<?= $this->link_title ?>"
+             aria-label="<?= $this->link_title ?>"
+          >
+            <?php if ($image = $this->arrData['getImageObject']($this -> image )): ?>
+              <img
+                class="rsce_footer__logo"
+                src="<?php echo $image->src ?>"
+                alt="<?php echo $image->alt ?: $this->image_alt ?>"
+                title="<?= $this->image_title ?>"
+                <?php echo $image->imgSize ?>
+              >
+            <?php endif; ?>
+          </a>
+        <?php endif; ?>
+        <?php if ( $this->text ): ?>
+          <div class="rsce_footer__text">
+            <?= $this->text ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <div class="col-24 col-lg-8">
+        <?php if ( $this->title ): ?>
+          <<?= $this -> title['unit'] ?> class="rsce_footer__title">
+            <?= $this -> title['value'] ?>
+          </<?= $this -> title['unit'] ?>>
+        <?php endif; ?>
+        <ul class="rsce_footer__social_list">
+          <?php foreach ( $this->list as $item ): ?>
+            <li class="rsce_footer__social_item">
+              <a href="<?= $item->link ?>"
+                 class="rsce_footer__social_link"
+                 title="<?= $item->link_title ?>"
+                 aria-label="<?= $item->link_title ?>"
+              >
+                <?php if ($image = $this->arrData['getImageObject']($item -> image )): ?>
+                  <img
+                    class="rsce_footer__social_icon"
+                    src="<?php echo $image->src ?>"
+                    alt="<?php echo $image->alt ?: $item->image_alt ?>"
+                    title="<?= $item->image_title ?>"
+                    <?php echo $image->imgSize ?>
+                  >
+                <?php endif; ?>
+              </a>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+      <div class="col-24">
+        {{insert_module::10}}
+        <div class="rsce_footer__bottom">
+          <?php if ( $this->bottom_text ): ?>
+            <p class="rsce_footer__bottom_text">
+              <?= $this->bottom_text ?>
+            </p>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

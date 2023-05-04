@@ -1,0 +1,43 @@
+<section class="rsce_card_hover_effect <?= $this->class ?>" <?= $this->cssID ?> >
+  <div class="container">
+    <div class="row">
+      <?php foreach( $this->list as $item ): ?>
+        <div class="col-24 col-md-12 col-lg-8">
+          <div class="rsce_card_hover_effect__item">
+            <?php if ( $item->image_size ): ?>
+              <div class="rsce_card_hover_effect__image_container">
+                <?php if ( $image = $this->arrData['getImageObject']( $item -> image, $item->image_size ) ): ?>
+                  <?php $image->picture['alt'] = $item->image_alt ?>
+                  <?php $image->picture['title'] = $item->image_title ?>
+                  <?php $image->picture['class'] = 'rsce_card_hover_effect__image'?>
+                  <?php $this->insert('image', (array) $image); ?>
+                <?php endif; ?>
+              </div>
+            <?php else: ?>
+              <div class="rsce_card_hover_effect__image_container">
+                <?php if ( $image = $this->arrData['getImageObject']($item -> image, [null, null, 4] ) ): ?>
+                  <?php $image->picture['alt'] = $item->image_alt ?>
+                  <?php $image->picture['title'] = $item->image_title ?>
+                  <?php $image->picture['class'] = 'rsce_card_hover_effect__image'?>
+                  <?php $this->insert('image', (array) $image); ?>
+                <?php endif; ?>
+              </div>
+            <?php endif; ?>
+            <?php if ( $item->title ): ?>
+              <div class="rsce_card_hover_effect__text_container">
+                <?php if ( $item->textarea ): ?>
+                  <p class="rsce_card_hover_effect__text">
+                    <?= $item->textarea ?>
+                  </p>
+                <?php endif; ?>
+                <<?= $item->title[ 'unit' ] ?> class="rsce_card_hover_effect__title">
+                  <?= $item->title[ 'value' ] ?>
+                </<?= $item->title[ 'unit' ] ?>>
+              </div>
+            <?php endif; ?>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>

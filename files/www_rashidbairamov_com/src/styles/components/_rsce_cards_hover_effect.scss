@@ -1,0 +1,48 @@
+.rsce_card_hover_effect {
+	padding: rem-calc( 50px ) rem-calc( 20px );
+	@include media-breakpoint-up( lg ) {
+		padding: rem-calc( 100px ) rem-calc( 50px );
+	}
+
+	.col-24 {
+		margin-bottom: rem-calc( 20px );
+	}
+
+	&__item {
+		position: relative;
+		height: 100%;
+		border-radius: rem-calc( 30px );
+		cursor: pointer;
+		transition-duration: .3s;
+		&:hover {
+			transform: scale( 1.1 ) translateZ(0);
+			@include media-breakpoint-up( lg ) {
+				transform: scale( 1.15 ) translateZ( 0 );
+			}
+		}
+
+		&.filtered {
+			transform: scale( .9 );
+			filter: brightness(.5) saturate(0) contrast(1.1) blur(5px);
+			border-radius: rem-calc( 30px );
+			transition-duration: .3s;
+		}
+	}
+	&__image_container {
+		height: 100%;
+		figure {
+			height: 100%;
+			img {
+				height: 100%;
+				border-radius: rem-calc( 30px );
+			}
+		}
+	}
+	&__text_container {
+		position: absolute;
+		top: 75%;
+		width: 100%;
+		left: 0;
+		padding-left: rem-calc( 20px );
+	}
+}

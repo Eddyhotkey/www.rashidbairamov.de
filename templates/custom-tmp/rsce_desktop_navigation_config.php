@@ -10,7 +10,7 @@ return array(
         'de' => array('Header-Modul: Vorlage für die Kopfzeile', ''),
     ),
     'types' => array('module'),
-    'moduleCategory' => 'RSCE_MODULE: Header mit Navigation',
+    'moduleCategory' => 'RSCE_MODULE',
     'beTemplate' => 'be_wildcard',
     'standardFields' => array('cssID'),
     'wrapper' => array(

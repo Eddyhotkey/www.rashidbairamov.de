@@ -1,0 +1,19 @@
+.rsce_spain {
+	padding-top: rem-calc( 30px );
+	padding-bottom: rem-calc( 30px );
+	@include media-breakpoint-up( lg ) {
+		padding-top: rem-calc( 50px );
+		padding-bottom: rem-calc( 50px );
+	}
+	&__title {
+		span {
+			padding-right: rem-calc( 3px );
+			color: $germany;
+		}
+	}
+	&__teaser {
+		margin-bottom: 0;
+		font-weight: 300;
+		color: $luxembourg;
+	}
+}

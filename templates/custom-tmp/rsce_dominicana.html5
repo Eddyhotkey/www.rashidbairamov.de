@@ -1,0 +1,32 @@
+<section class="rsce_dominicana <?= $this->class ?>" <?= $this->cssID ?> >
+  <div class="container">
+    <div class="row">
+      <div class="col-24 col-md-16 order-2 order-md-1">
+        <ul class="rsce_dominicana__list">
+          <?php foreach ( $this->list as $item ): ?>
+            <li class="rsce_dominicana__item">
+              <?php if ( $item->text ): ?>
+                <p class="rsce_dominicana__text">
+                  <?= $item->text ?>
+                </p>
+              <?php endif; ?>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+      <div class="col-24 col-md-8 order-1 order-md-2">
+        <div class="rsce_dominicana__image_container">
+          <?php if ($image = $this->arrData['getImageObject']($this -> image )): ?>
+            <img
+              class="rsce_dominicana__image"
+              src="<?php echo $image->src ?>"
+              alt="<?php echo $image->alt ?: $this->image_alt ?>"
+              title="<?= $this->image_title ?>"
+              <?php echo $image->imgSize ?>
+            >
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

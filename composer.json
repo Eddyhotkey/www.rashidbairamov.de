@@ -11,7 +11,10 @@
         "contao/manager-bundle": "4.13.*",
         "contao/news-bundle": "4.13.*",
         "contao/newsletter-bundle": "4.13.*",
+        "ma3xl3/contao-easy-favicon": "^2.0",
         "madeyourday/contao-rocksolid-custom-elements": "^2.4",
+        "mediamotionag/contao-backend-optim-bundle": "^2.0",
+        "menatwork/semantic_html5": "^2.0",
         "terminal42/contao-node": "^1.5"
     },
     "extra": {

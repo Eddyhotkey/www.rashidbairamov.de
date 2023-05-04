@@ -1,0 +1,12 @@
+<div class="rsce_spain <?= $this->class ?> " <?= $this->cssID ?>>
+  <div class="container">
+    <?php if( $this->title): ?>
+      <<?= $this -> title['unit'] ?> class="rsce_spain__title"><?php if ( $this->symbol ): ?><span><?= $this->symbol ?></span><?php endif; ?><?= $this -> title['value'] ?></<?= $this -> title['unit'] ?>>
+    <?php endif; ?>
+    <?php if ( $this->teaser ): ?>
+      <p class="rsce_spain__teaser">
+        <?= $this->teaser ?>
+      </p>
+    <?php endif; ?>
+  </div>
+</div>

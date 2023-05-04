@@ -1,0 +1,30 @@
+.rsce_australien {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	&__item {
+		margin-right: rem-calc( 20px );
+		margin-bottom: rem-calc( 20px );
+		border: rem-calc( 1px ) solid $luxembourg;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__title {
+		padding: rem-calc( 10px );
+		font-size: rem-calc( 16px );
+		font-weight: 400;
+		border-bottom: rem-calc( 1px ) solid $luxembourg;
+	}
+
+	&__text {
+		margin-bottom: 0;
+		padding: rem-calc( 10px );
+		font-weight: 300;
+		color: $luxembourg;
+	}
+}

@@ -29,6 +29,15 @@ return array(
 
             'fields' => array(
 
+              ### ITEM CLASS ###
+              'item_class' => array(
+                'label' => array(
+                  'de' => array('Item-Class', ''),
+                ),
+                'inputType' => 'text',
+                'eval' => array('tl_class' => 'w50 clr'),
+              ),
+
                 ### GROUP ###
                 'image_group' => array(
                     'label' => array('Das Bild', 'Hier könnten Sie ein Bild hinzufügen'),

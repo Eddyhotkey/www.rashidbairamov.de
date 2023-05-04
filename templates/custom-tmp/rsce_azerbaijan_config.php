@@ -116,7 +116,6 @@ return array(
                 'filesOnly' => true,
                 'extensions' => 'jpg,jpeg,png,gif,svg',
                 'tl_class'=>'clr',
-                'mandatory' => true,
             ),
         ),
 
@@ -149,7 +148,6 @@ return array(
                 'filesOnly' => true,
                 'extensions' => 'jpg,jpeg,png,gif,svg',
                 'tl_class'=>'clr',
-                'mandatory' => true,
             ),
         ),
 
@@ -182,7 +180,6 @@ return array(
                 'filesOnly' => true,
                 'extensions' => 'jpg,jpeg,png,gif,svg',
                 'tl_class'=>'clr',
-                'mandatory' => true,
             ),
         ),
 

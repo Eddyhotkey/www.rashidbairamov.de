@@ -1,0 +1,31 @@
+.rsce_belgien {
+	&__image_container {
+		position: relative;
+		width: fit-content;
+		margin: 0 auto;
+		border-bottom: rem-calc( 1px ) solid $germany;
+		@include media-breakpoint-down( md ) {
+			margin-bottom: rem-calc( 30px );
+		}
+	}
+	&__deco {
+		position: absolute;
+		&:first-child {
+			top: 0;
+			left: 0;
+		}
+		&:nth-child( 2 ) {
+			top: 50%;
+			right: 0;
+		}
+	}
+	&__text {
+		color: $luxembourg;
+		@include media-breakpoint-up( lg ) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 100%;
+		}
+	}
+}

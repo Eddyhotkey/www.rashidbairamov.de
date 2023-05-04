@@ -1,7 +1,7 @@
 <section class="rsce_azerbaijan <?= $this->class ?>" <?= $this->cssID ?> >
     <div class="container">
         <div class="row">
-            <div class="col-24 col-lg-14">
+            <div class="col-24 col-md-14">
                 <div class="rsce_azerbaijan__text_container">
                     <?php if( $this->headline ): ?>
                         <<?php echo $this->hl ?> itemprop="title" class="rsce_azerbaijan__title">
@@ -39,7 +39,7 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="col-24 col-lg-10">
+            <div class="col-24 col-md-10">
                 <div class="rsce_azerbaijan__images_container">
                     <?php if ($deco_icon= $this->arrData['getImageObject']($this -> image_deco )): ?>
                         <img
@@ -51,7 +51,7 @@
                         >
                     <?php endif; ?>
                     <div class="rsce_azerbaijan__preview">
-                        <?php if ($image = $this->arrData['getImageObject']($this -> image, [null, null, 3] )): ?>
+                        <?php if ($image = $this->arrData['getImageObject']($this -> image, [null, null, 2] )): ?>
                             <?php $image->picture['alt'] = $this->image_alt ?>
                             <?php $image->picture['title'] = $this->image_title ?>
                             <?php $this->insert('image', (array) $image); ?>

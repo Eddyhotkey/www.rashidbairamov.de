@@ -1,0 +1,35 @@
+.mod_newscategories {
+	margin-bottom: rem-calc( 20px );
+	ul.level_1 {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			position: relative;
+			display: flex;
+			align-items: center;
+			margin-right: rem-calc( 20px );
+			margin-bottom: rem-calc( 10px );
+			font-weight: 300;
+			color: $luxembourg;
+			&::before {
+				content: '#';
+				padding-right: rem-calc( 3px );
+				color: $germany;
+			}
+			strong.active {
+				span {
+					color: $france;
+				}
+			}
+			a {
+				text-decoration: none;
+				color: $luxembourg;
+			}
+		}
+	}
+}

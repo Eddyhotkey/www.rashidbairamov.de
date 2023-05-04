@@ -1,0 +1,40 @@
+<section class="rsce_belgien <?= $this->class ?>" <?= $this->cssID ?>>
+  <div class="container">
+    <div class="row">
+      <?php if ( $this->description ): ?>
+        <div class="col-24 col-md-12 col-lg-16 order-2 order-md-1">
+          <div class="rsce_belgien__text">
+            <?= $this->description ?>
+          </div>
+        </div>
+      <?php endif; ?>
+      <div class="col-24 col-md-12 col-lg-8 order-1 order-md-2">
+        <div class="rsce_belgien__image_container">
+          <?php if ($deco_icon = $this->arrData['getImageObject']($this -> image_deco )): ?>
+            <img
+              class="rsce_belgien__deco"
+              src="<?php echo $deco_icon->src ?>"
+              alt="<?php echo $deco_icon->alt ?: $this->image_deco_alt ?>"
+              title="<?= $this->image_deco_title ?>"
+              <?php echo $deco_icon->imgSize ?>
+            >
+          <?php endif; ?>
+          <?php if ($deco_icon_1 = $this->arrData['getImageObject']($this -> image_deco_1 )): ?>
+            <img
+              class="rsce_belgien__deco"
+              src="<?php echo $deco_icon_1->src ?>"
+              alt="<?php echo $deco_icon_1->alt ?: $this->image_deco_alt_1 ?>"
+              title="<?= $this->image_deco_title_1 ?>"
+              <?php echo $deco_icon_1->imgSize ?>
+            >
+          <?php endif; ?>
+          <?php if ($image = $this->arrData['getImageObject']($this -> image, [null, null, 2] )): ?>
+            <?php $image->picture['alt'] = $this->image_alt ?>
+            <?php $image->picture['title'] = $this->image_title ?>
+            <?php $this->insert('image', (array) $image); ?>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

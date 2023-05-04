@@ -1,7 +1,6 @@
-/******************************************************
-*** Created by S-Punkt-Online www.s-punkt-online.de ***
-******************************************************/
-
+/***************************************************************
+*** Created by Rashid Bairamov https://www.rashidbairamov.de ***
+***************************************************************/
 
 $font-size: 16px;
 $grid-columns: 24;
@@ -23,20 +22,32 @@ $grid-columns: 24;
 @import "base/global";
 
 /*** themes ***/
+
 /*** layouts ***/
-@import "layout/header",
-		"layout/footer";
+@import
+	"layout/header",
+	"layout/footer";
 
 /*** pages ***/
 /*** components ***/
-@import "components/navigation_button",
-		"components/mod_mobile_menu",
-		"components/rsce_mobile_navigation",
-		"components/rsce_desktop_navigation",
-		"components/rsce_azerbaijan",
-		"components/rsce_germany",
-		"components/rsce_france",
-		"components/rsce_luxembourg",
-		"components/news_short_custom",
-		"components/ce_code",
-		"components/mod_newsreader";
+@import
+	"components/navigation_button",
+	"components/mod_mobile_menu",
+	"components/rsce_mobile_navigation",
+	"components/rsce_desktop_navigation",
+	"components/rsce_azerbaijan",
+	"components/rsce_germany",
+	"components/rsce_france",
+	"components/rsce_luxembourg",
+	"components/news_short_custom",
+	"components/ce_code",
+	"components/mod_newsreader",
+	"components/rsce_spain",
+	"components/mod_newscategories",
+	"components/rsce_belgien",
+	"components/rsce_australien",
+	"components/rsce_dominicana",
+	"components/ce_image",
+	"components/rsce_cards_hover_effect"
+
+;

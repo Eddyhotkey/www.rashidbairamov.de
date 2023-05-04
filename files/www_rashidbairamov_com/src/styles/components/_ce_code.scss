@@ -1,21 +1,47 @@
 .ce_code {
   margin-bottom: rem-calc( 10px );
-  @include media-breakpoint-up( lg ) {
-	margin-bottom: rem-calc( 30px );
-  }
-  h1,h2,h3,h4,h5,h6 {
-	font-size: rem-calc( 20px );
-	font-weight: 300;
-  }
-
-  span {
-	position: relative;
-	counter-increment: line-count;
-	&::before {
-	  display: inline-block;
-	  padding-right: rem-calc( 20px );
-	  content: counter(line-count);
-	  color: $luxembourg;
+	@include media-breakpoint-up( lg ) {
+		margin-bottom: rem-calc( 30px );
 	}
-  }
+	h1, h2, h3, h4, h5, h6 {
+		position: relative;
+		margin-bottom: rem-calc( 20px );
+		font-size: rem-calc( 16px );
+		font-weight: 300;
+		color: $germany;
+		&::before {
+			content: '#';
+			margin-right: rem-calc( 3px );
+		}
+	}
+
+	pre {
+		code {
+			padding: rem-calc( 20px );
+			border: rem-calc( 3px ) solid $germany;
+		}
+	}
 }
+
+.rsce .ce_code {
+	h1, h2, h3, h4, h5, h6 {
+		color: $rsce;
+	}
+	pre {
+		code {
+			border-color: $rsce;
+		}
+	}
+}
+
+.js .ce_code {
+	h1, h2, h3, h4, h5, h6 {
+		color: $js;
+	}
+	pre {
+		code {
+			border-color: $js;
+		}
+	}
+}
+

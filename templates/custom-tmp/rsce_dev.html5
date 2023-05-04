@@ -1,0 +1,5 @@
+<?php if ($image = $this->arrData['getImageObject']($this -> image, $this->image_size )): ?>
+  <?php $image->picture['alt'] = $this->image_alt ?>
+  <?php $image->picture['title'] = $this->image_title ?>
+  <?php $this->insert('image', (array) $image); ?>
+<?php endif; ?>
